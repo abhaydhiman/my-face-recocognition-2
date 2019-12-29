@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>trial next gen</title>
+  </head>
+  <body background="my_pic.jpg">
+    <div class="login">
+      <br />
+      <br />
+      <h1><center>Face Recognition</center></h1>
+
+      <form action="{{ url_for('predict')}}" method="post">
+        <center>
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            required="required"
+          />
+        </center>
+        <br />
+
+        <center>
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+            required="required"
+          />
+        </center>
+
+        <br /><br />
+        <center>
+          <button type="submit" class="btn btn-primary btn-block btn-large">
+            Check
+          </button>
+        </center>
+      </form>
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
